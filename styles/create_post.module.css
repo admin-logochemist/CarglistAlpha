@@ -1,0 +1,162 @@
+#radio_list {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#container {
+  padding: 55px;
+  line-height: 3;
+  z-index: 99 !important;
+}
+
+.jobpost {
+  display: inline;
+}
+.json_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+}
+.json_form_item {
+  margin: 0.1em 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+}
+.formnote {
+  padding: 0;
+}
+
+.variant_radio {
+  display: flex;
+  padding: 13px;
+  flex-direction: column;
+  line-height: 1;
+  margin-left: 15px;
+}
+.variant_radio input {
+  margin-left: 0;
+  margin-right: 0.5em;
+}
+.variant_radio label {
+  cursor: pointer;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.json_form_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+}
+.variant_radio label {
+  margin-bottom: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-align: start;
+  padding-right: 1em;
+}
+.submit_button button {
+  width: 150px;
+  height: 47px;
+  border-radius: 5px;
+  background: linear-gradient(#2b6777, #0a58caed);
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  border: 1px solid white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.submit_button button a {
+  text-decoration: none;
+  color: white;
+}
+
+#button_radio {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px !important;
+  background: linear-gradient(#2b6777, #0a58caed);
+  color: white;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  font-size: 15px;
+  border: 1px solid white;
+}
+
+#button_radio a {
+  text-decoration: none;
+  color: white;
+}
+
+.go_pickbutton {
+  width: 140px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px !important;
+  border-radius: 10px !important;
+  background: linear-gradient(#2b6777, #0a58caed);
+  color: white;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  font-size: 15px !important;
+  border: 1px solid white;
+}
+
+.btnICon {
+  margin-left: 5px;
+  font-size: 16px !important;
+}

@@ -1,0 +1,257 @@
+.body {
+  overflow-x: hidden;
+}
+
+#input1 {
+  display: flex;
+  flex-direction: column;
+}
+#TextArea {
+  display: flex;
+
+  flex-direction: column;
+}
+#account_section {
+  margin-top: 70px;
+}
+#input1 input {
+  height: 24px;
+  border: 1px solid rgb(50, 50, 73);
+}
+#select_account {
+  width: 201px;
+  height: 24px;
+}
+#fieldset_account {
+}
+#col_account {
+  background: #f7f7f7;
+}
+#check_account {
+}
+#form_bg {
+  background: #f7f7f7;
+}
+form #form_group {
+  height: 0px;
+  width: 43%;
+  background: #f7f7f7;
+  padding: 21px;
+  border-radius: 5px;
+  position: relative;
+}
+form #form_group:before {
+  background: #f7f7f7;
+  content: "Posting Details";
+  padding: 5px;
+  font-size: 14px;
+  color: black;
+  border-radius: 3px;
+  position: absolute;
+  top: -15px;
+  left: 30px;
+}
+form #form_control {
+  width: 50%;
+  margin-bottom: 10px;
+}
+form #inside {
+  width: 50%;
+  bottom: 63px;
+  margin-top: 40px;
+  position: relative;
+  float: right;
+}
+
+form #checkbox,
+form #radio,
+form #dropdown {
+  margin: 5px 0;
+}
+form #checkbox label {
+  display: block;
+  margin-bottom: 5px;
+}
+form #radio label {
+  display: inline-block;
+  margin-right: 20px;
+}
+form #radio label:last-child {
+  margin-right: 0;
+}
+form #dropdown {
+  background: #fff;
+  font-size: 14px;
+}
+#col_12 {
+  height: 90px;
+  border: 1px solid #d3cece;
+  border-radius: 2px;
+}
+#control_label {
+  width: 100% !important;
+}
+#job_title {
+  margin-top: 10px;
+}
+#job_title_label {
+  font-size: 14px;
+  font-weight: 500;
+}
+#job_title_search {
+  height: 26px;
+}
+
+/* --------------------form------------- */
+
+.paylabel {
+  margin: 10px;
+  padding: 5px;
+}
+
+#secForm {
+  margin-top: 10px;
+}
+#secForm_row {
+  margin-top: 10px;
+}
+
+#form2 {
+  width: 100%;
+  height: 250px;
+}
+#form_control2 {
+  width: 100%;
+  height: 28px;
+}
+#form_bg2 {
+  background: #f7f7f7;
+}
+#form_group2 {
+  width: 100%;
+  height: 235px;
+}
+#form_group2:before {
+  padding: 5px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  border-radius: 3px;
+  position: absolute;
+  top: -15px;
+  left: 30px;
+}
+#control_label2 {
+  margin-bottom: 10px;
+}
+#inside2 {
+  border-radius: 7px;
+  width: 100%;
+  height: 181px;
+  margin-top: 40px;
+  position: relative;
+  border: 1px solid #b9a9a9 !important;
+}
+#inside2:before {
+  content: "Your Preferences";
+  padding: 5px;
+  background: #f7f7f7;
+  border-radius: 3px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  left: 30px;
+  top: -12px;
+}
+
+#radio,
+#dropdown {
+  margin: 5px 50px;
+}
+#checkbox label {
+  display: block;
+  margin-bottom: 5px;
+}
+#radio label {
+  display: inline-block;
+  margin-right: 20px;
+}
+#radio label:last-child {
+  margin-right: 0;
+}
+#dropdown {
+  background: #fff;
+  font-size: 14px;
+}
+#form_list_input {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  float: right;
+}
+#form_list_input input {
+  width: 75%;
+  height: 20px;
+}
+#form_inside_list {
+  display: grid;
+  line-height: 2;
+}
+#form_list_input2 {
+  float: right;
+  display: flex;
+}
+
+#postselect {
+  display: flex;
+  flex-direction: column;
+}
+
+#postselectText {
+  display: flex;
+  flex-direction: column;
+}
+.formbuttonsection {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.formbuttonsection button {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px !important;
+  border-radius: 10px !important;
+  background: linear-gradient(#2b6777, #0a58caed);
+  color: white;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  font-size: 15px !important;
+  border: 1px solid white;
+}
+
+#input {
+  margin: -13px;
+  height: 26px;
+  margin-top: -7px;
+  width: 103%;
+}
+
+#form_inside {
+  display: flex;
+}
+#form_inside2 {
+  float: left;
+}
+#radio_label input {
+  margin-right: 8px !important;
+}
+
+@media screen and (max-width: 767px) {
+  #inside2 {
+    height: 210px;
+  }
+  #form_bg2 {
+    height: 480px;
+  }
+}

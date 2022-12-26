@@ -1,0 +1,179 @@
+.global_header {
+  background: #2b6777;
+  border-bottom: 1px #ccc solid;
+  display: block;
+  line-height: 1.925em;
+  height: 40px;
+  padding: 5px;
+}
+
+.global_header:before,
+.global_header:after {
+  content: " ";
+  display: table;
+  visibility: hidden;
+}
+
+.header_logo {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  float: left;
+  line-height: 1;
+  margin: 0 5px;
+  padding: 0.25em;
+  text-decoration: none;
+}
+
+.global_header .breadcrumbs_container {
+  float: left;
+  font-size: 14px;
+}
+
+.breadcrumbs_container ul {
+  list-style: none;
+  display: flex;
+}
+
+.global_header.simple .breadcrumbs_container .breadcrumbs .crumb {
+  float: left;
+  margin-left: 3px;
+}
+
+.global_header.simple .breadcrumbs_container .breadcrumbs .crumb p {
+  margin: 0;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: white;
+}
+
+.crumb a {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  color: white;
+  text-decoration: none;
+}
+
+.crumb p {
+  color: white;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.simple_page_content {
+  max-width: 820px;
+}
+
+.simple_page_content a {
+  text-decoration: none;
+}
+
+.simple_page_content {
+  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+  max-width: 768px;
+  min-height: 600px;
+  padding: 1em 1em 6em 1em;
+  margin-top: 60px;
+}
+
+.resolved_issues {
+  margin-top: 1em;
+}
+
+.system_status_heading_box {
+  margin: 0.67em 0;
+  -webkit-box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+  -moz-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 10%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  font-size: 22px;
+  line-height: 1;
+  margin-top: 0;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.system_status_heading_subtext {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+.simple_page_content ul {
+  list-style-type: disc;
+  list-style: none;
+}
+
+.issue_list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.issue_title {
+  font-size: 20px;
+  margin: 0 0 4px 0;
+  line-height: 20px;
+}
+
+.issue_list li {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 10%);
+  -moz-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 10%);
+  border: 1px solid #ccc;
+  list-style: none;
+  margin: 1em 1em 0 1em;
+  padding: 1em 1em 0 1em;
+}
+
+@media screen and (max-width: 767px) {
+  #row {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main {
+    width: 260% !important;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.accordion {
+  
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1053%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(43%2c 103%2c 119%2c 1)'%3e%3c/rect%3e%3cpath d='M-51.88 -22.78 a29.1 29.1 0 1 0 58.2 0 a29.1 29.1 0 1 0 -58.2 0z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-55.86 -18.81 a37.05 37.05 0 1 0 74.1 0 a37.05 37.05 0 1 0 -74.1 0z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M76.6482959276976-74.36820968895925L-59.26655912729356 24.379712696176227 175.39621831283307 61.54664536603191z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1386.3036001221008 187.9731626077805L1503.0062063592122 67.1240761508871 1382.157119902319-49.57853008622445 1265.4545136652073 71.27055637066894z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1280.89 -27.56 a19.55 19.55 0 1 0 39.1 0 a19.55 19.55 0 1 0 -39.1 0z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1269.88 -16.55 a41.57 41.57 0 1 0 83.14 0 a41.57 41.57 0 1 0 -83.14 0z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-55.936637785382686 573.9457743078613L107.75753309853684 611.7375514376306-18.14486065561338 410.25160342394173z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-12.259678817789286 440.3468197275002L46.95456278173164 623.1822230357891 161.5302872722313 500.3148011637684z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-61.27 434.59 a47.86 47.86 0 1 0 95.72 0 a47.86 47.86 0 1 0 -95.72 0z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1351.527%2c524.628C1369.247%2c524.318%2c1382.02%2c509.594%2c1390.635%2c494.106C1398.954%2c479.15%2c1403.499%2c461.283%2c1395.037%2c446.407C1386.499%2c431.396%2c1368.795%2c425.557%2c1351.527%2c425.353C1333.828%2c425.144%2c1315.221%2c430.129%2c1306.202%2c445.359C1297.044%2c460.822%2c1301.053%2c479.918%2c1309.973%2c495.519C1318.97%2c511.254%2c1333.404%2c524.945%2c1351.527%2c524.628' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1280.13 421.2 a21.07 21.07 0 1 0 42.14 0 a21.07 21.07 0 1 0 -42.14 0z' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1366.987%2c557.288C1389.871%2c556.564%2c1403.099%2c534.272%2c1414.754%2c514.566C1426.73%2c494.317%2c1441.767%2c470.979%2c1430.125%2c450.535C1418.424%2c429.987%2c1390.555%2c428.762%2c1366.987%2c430.683C1347.189%2c432.296%2c1329.84%2c442.61%2c1319.469%2c459.552C1308.557%2c477.377%2c1304.542%2c498.968%2c1313.681%2c517.764C1324.047%2c539.086%2c1343.291%2c558.038%2c1366.987%2c557.288' fill='rgba(255%2c 255%2c 255%2c 0.17)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1053'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e") !important;
+  background-size: cover;
+  background-position-y:2px;
+  background-position-x:10px;
+  border-radius: 10px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.049);
+  margin-bottom: 1em;
+  padding: 20px;
+  border-radius: 15px !important;
+}
+
+.accordion h6 {
+  margin: 2px;
+}
+
+.answer {
+  color: dimgray;
+  padding: 0px 15px;
+}

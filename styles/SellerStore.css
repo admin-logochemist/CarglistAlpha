@@ -1,0 +1,75 @@
+.sectionStoreForm {
+  overflow-x: hidden !important;
+}
+
+.CreateStoreRow {
+  display: flex;
+  justify-content: center;
+}
+.CreateStoreForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px !important;
+}
+
+.CreateStoreInputGroup {
+  padding: 10px !important;
+}
+.CreateStoreInput {
+  margin: 10px !important ;
+}
+.CreateStoreInputGroup1 {
+  /* padding:  10px !important; */
+  width: 102%;
+}
+.CreateStoreInputGroup1 input {
+  margin: 5px;
+}
+.CreateStoreInput1 {
+}
+.CreateStoreInputGroup1 {
+  display: flex;
+}
+
+.CreateStoreForm1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.CreateStoreForm1 h3 {
+  padding: 0px 20px;
+}
+.CreateStoreFile {
+  padding: 10px !important;
+  width: 83% !important;
+}
+.CreateStoreInputGroup span {
+  margin-left: 9px;
+}
+.CreateStorebtn {
+  padding: 0px 20px;
+}
+.CreateStorebtn button {
+  width: 150px;
+  height: 35px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px !important;
+  background-color: #2b6777;
+}
+
+.selectimage {
+  height: 80px;
+  width: 120px;
+  margin-left: 10px;
+  border: none !important;
+}
+
+.uploadimages {
+  display: flex;
+  flex-direction: row;
+}
+.flr {
+}

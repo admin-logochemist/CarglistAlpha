@@ -1,0 +1,113 @@
+.sect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sect span {
+  border-bottom: 1px solid #2b6777;
+  font-size: 16px;
+  color: darkgray;
+}
+
+.MainContainer {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 110px;
+  border: 1px solid lightgray;
+  border-radius: 5px !important;
+}
+
+.card img {
+  color: #2b6777 !important;
+  width: 13%;
+  margin-bottom: 4px;
+}
+.card span {
+  font-size: 14px;
+}
+
+.Questions {
+  text-align: center;
+  border-bottom: 1px solid #2b6777;
+  font-size: 16px;
+  color: darkgray;
+}
+
+.ulquestion {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+}
+
+.ulquestion li a {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 14px;
+}
+.ulquestion li::before {
+  content: ".";
+  color: #2b6777;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.roow2 {
+  display: flex;
+  flex-direction: row !important;
+
+}
+
+.ContactCard {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center;
+  justify-content: space-evenly !important;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 110px;
+  border: 1px solid lightgray;
+  border-radius: 5px !important;
+}
+
+.ContactCard img {
+  color: white !important;
+  width: 13%;
+  margin-bottom: 4px;
+}
+
+.ContactCard span {
+  font-size: 18px;
+}
+
+.ContactCard span p {
+  font-size: 12px;
+  color: darkgray;
+}
+
+.backIcon2 {
+  font-size: 55px;
+  color: black;
+}
+@media only screen and (max-width:500px) {
+
+
+.roow2 {
+  width: 245vw !important; 
+}
+
+}
