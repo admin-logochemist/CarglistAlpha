@@ -17,14 +17,15 @@ const UserOderDetails = () => {
   const [userData, setUserData] = useState([])
   const [select,setSelect]= useState();
   const [addId,setAddId] =useState();
-    const [searchResult,setSearchResult] = useState()
-    const [flag,setFlag] = useState(false)
+  const [searchResult,setSearchResult] = useState()
+  const [flag,setFlag] = useState(false)
   var data = [];
   const handleCapacity=(e)=>{
       setSelect(e.target.value);
       setAddId(e.target.id);
      console.log(select)
   }
+  
   const getUser = async () => {
     
       const querySnapshot = await getDocs(collection(db, "orderdetail"),)
@@ -34,11 +35,7 @@ const UserOderDetails = () => {
       data.push({ id: doc.id, ...doc.data() })
     //   setUserData(userData=>[...userData,doc.data()])
     })
-    
-    
       setUserData(data);
-console.log(userData);        
-
 }
   
 const firebaseUpdate = async () => {
@@ -63,6 +60,7 @@ useEffect(() => {
     console.error(error)
   }
 }, [flag])  
+
 
 
   return (
@@ -244,5 +242,6 @@ useEffect(() => {
 
   )
 }
+
 
 export default UserOderDetails;

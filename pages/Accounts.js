@@ -9,6 +9,7 @@ import { createUserWithEmailAndPassword, getAuth, deleteUser } from 'firebase/au
 import { updateDoc, collection, onSnapshot, orderBy, query, doc, getDocs, where, getDoc, addDoc, deleteDoc } from 'firebase/firestore'
 import HeaderStore from '../components/component/HeaderStore';
 function Accounts() {
+    
     const [userData, setUserData] = useState([])
     const [select, setSelect] = useState();
     const [addId, setAddId] = useState();
@@ -18,9 +19,7 @@ function Accounts() {
     var data = [];
   
   
-        
      
-
     
     const ISSERVER = typeof window === "undefined";
     
@@ -145,8 +144,6 @@ function Accounts() {
                                         </div>
                                     </div>
                                 </div>
-
-
 
 
                                 <div className="panel-body table-responsive">

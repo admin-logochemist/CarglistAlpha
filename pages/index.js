@@ -809,7 +809,6 @@ function Home() {
               }
             </span>
 
-
             <p className="P_1">
               {/*  <select name="lang" id="chlang" className='js-only' >
                 <option value="?lang=da&amp;setlang=1">dansk</option>
@@ -829,7 +828,7 @@ function Home() {
                 <option value="?lang=zh&amp;setlang=1">中文</option>
                 <option value="?lang=ja&amp;setlang=1">日本語</option>
                 <option value="?lang=ko&amp;setlang=1">한국말</option>
-      </select> */}
+               </select> */}
             </p>
 
             <div className={`${"mt-5"} ${styles.RightSide}`}>

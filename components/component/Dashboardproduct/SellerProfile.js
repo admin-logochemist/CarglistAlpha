@@ -136,12 +136,10 @@ const Profile = () => {
 
 
 
-
-
   return (
     <div className="container" style={{marginLeft: '-8%'}}>
       <div className="row profile">
-        <div className="col-md-3">
+        <div className="col-lg-6">
           <div className="profile-sidebar">
             <span className='profileedit' onClick={handleClick} >Edit</span>
               {edit ? <div className='Editor'>
@@ -186,6 +184,7 @@ const Profile = () => {
 
             <div className="profile-userbuttons">
             </div>
+            
             {/*       <div className="profile-usermenu">
               <ul className="nav">
                 <li className="active">
@@ -213,7 +212,19 @@ const Profile = () => {
 
             <div className="portlet light bordered">
               <div className="row list-separated profile-stat">
-                <div className="col-md-4 col-sm-4 col-xs-6">
+              <div className="col-12">
+                  <div className="uppercase profile-stat-title"> 37 </div>
+                  <div className="uppercase profile-stat-text"> Projects </div>
+                </div>
+                <div className="col-12">
+                  <div className="uppercase profile-stat-title"> 51 </div>
+                  <div className="uppercase profile-stat-text"> Tasks </div>
+                </div>
+                <div className="col-12">
+                  <div className="uppercase profile-stat-title"> 61 </div>
+                  <div className="uppercase profile-stat-text"> Uploads </div>
+                </div>
+                {/* <div className="col-md-4 col-sm-4 col-xs-6">
                   <div className="uppercase profile-stat-title"> 37 </div>
                   <div className="uppercase profile-stat-text"> Projects </div>
                 </div>
@@ -224,7 +235,7 @@ const Profile = () => {
                 <div className="col-md-4 col-sm-4 col-xs-6">
                   <div className="uppercase profile-stat-title"> 61 </div>
                   <div className="uppercase profile-stat-text"> Uploads </div>
-                </div>
+                </div> */}
               </div>
               <div>
                 <h4 className="profile-desc-title">About Jason Davis</h4>
@@ -248,10 +259,10 @@ const Profile = () => {
 
           </div>
         </div>
-        <div className="col-md-9">
+        <div className="col-lg-6 ">
 
 
-          <div className="profile-content">
+          <div className="profile-content mt-lg-0 mt-3">
             <div className='storeprofile'>
               <img src={sellerStore[0]?.image} alt="" className='storecover' />
             </div>

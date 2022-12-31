@@ -124,9 +124,7 @@ function SearchProduct() {
     // };
 
 
-
-
-
+    
     return (
         <>
             <Header />
@@ -147,7 +145,6 @@ function SearchProduct() {
                 </div>
             </div>
             <HeaderStore />
-
 
             <div className='container-fluid' id={styles.Mallcatlist}>
                 <h5>CATEGORY</h5>

@@ -111,7 +111,6 @@ function PostSearch() {
     }
 
 
-    // console.log(city, "city")
 
     return (
         <>

@@ -12,10 +12,8 @@ import { addToBasket } from '../features/BasketSlice';
 
 const HeaderEbey = () => {
 
-    const [category, setCategory] = useState('')
-
-
-    const [search, setSearch] = useState("")
+    const [category, setCategory] = useState('');
+    const [search, setSearch] = useState("");
 
     const Searchdata = () => {
         if (search || category) {
@@ -23,7 +21,6 @@ const HeaderEbey = () => {
             router.push({ pathname: '/SearchProduct', query: { search: search, Scategory: category } })
         }
     }
-
 
     const ProductCategory = (e) => {
         // setSubcat(e.target.id)

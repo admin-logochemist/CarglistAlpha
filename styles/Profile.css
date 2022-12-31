@@ -8,8 +8,8 @@
 @media screen and (max-width: 600px) {
   .profile {
     margin: 20px 0;
-    width: 150%;
-    margin-left: 10% !important;
+    width: 100%;
+    margin-left: 40px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,9 +17,11 @@
   .responsiveSettings{
     width: 50% !important;
   }
-  #hideOnMob{
-    display: none;
+  .profile-content {
+    
+    width:400px !important;
   }
+  
 }
 
 @media screen and (min-width: 600px) {
@@ -27,7 +29,7 @@
     margin: 20px 0;
     width: 100% !important;
     display: flex !important;
-
+    
   }
 }
 
@@ -136,9 +138,10 @@
 
 /* Profile Content */
 .profile-content {
-  padding: 20px;
+  padding: 0px;
   background: #fff;
   min-height: 460px;
+  width: 500px;
 }
 a,
 button,
@@ -341,4 +344,30 @@ ul {
   .Editor {
     width: 300px;
   }
+  .profile-content {
+    
+    width:300px !important;
+  }
+}
+
+.profile-sidebar{
+  width: 250px;
+}
+
+@media screen and (max-width: 576px) {
+  .profile{
+    margin-left: 100px !important;
+  }
+}
+@media screen and (max-width: 476px) {
+  .profile{
+    margin-left: 70px !important;
+  }
+
+}
+@media screen and (max-width: 376px) {
+  .profile{
+    margin-left: 50px !important;
+  }
+ 
 }

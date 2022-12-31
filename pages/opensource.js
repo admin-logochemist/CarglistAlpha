@@ -4,7 +4,9 @@ import styles from '../styles/opensource.module.css'
 import Header from "./Header"
 import Footer from '../components/component/Footer'
 
+
 export default function opensource() {
+
   return (
     <>
       <Header />
@@ -73,7 +75,9 @@ export default function opensource() {
         </ul>
       </section>
 
+
       <Footer />
     </>
   )
 }
+``

@@ -166,7 +166,8 @@
   margin-top: 5em;
   margin-top: 10%;
   display: flex;
-  width: 200% !important;
+  /* width: 100 !important; */
+  width: 400px;
 }
 
 /* width: 240% !important; */
@@ -368,16 +369,10 @@
   }
 
   .jobpost_wrapper {
-    text-align: center;
-    margin-top: 5em;
-    text-align: center;
-    margin-top: 5em;
-    margin-top: 26px;
-    margin-top: 300% !important;
-    margin-left: 40% !important;
-    display: flex;
-    width: 400% !important;
+    
+    width: 500px !important;
   }
+  
   .jobpost_job_postings {
     margin: 0px auto !important;
     width: 60%;
@@ -447,3 +442,35 @@
 .classifications {
   display: flex;
 }
+
+  @media only screen and (max-width:600px) {
+  
+    #section {
+      width: 110vw !important;
+    } 
+   
+}
+  
+  @media only screen and (max-width:500px) {
+  
+    #section {
+      width: 245vw !important;
+    } 
+    .jobpost_wrapper {
+    
+      width: 600px !important;
+    }
+  }
+  
+  @media only screen and (max-width:360px) {
+  
+    #section {
+      width: 145vw !important;
+    } 
+    .jobpost_wrapper {
+    
+      width: 450px !important;
+    }
+   
+  }
+  

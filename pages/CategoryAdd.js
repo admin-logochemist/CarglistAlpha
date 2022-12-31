@@ -11,6 +11,7 @@ import { getDownloadURL, ref, uploadString } from 'firebase/storage';
 import Topbar from '../components/component/Topbar/Topbar'
 import Sidebar2 from '../components/component/Siderbar/Sidebar2'
 
+
 function CategoryAdd() {
     
     const [category, setCategory] = useState('')
@@ -114,9 +115,7 @@ function CategoryAdd() {
                                                             <div className="col-sm-3">
                                                                 <input type="file" className="form-control" onChange={addInagetoPost} />
                                                             </div>
-
                                                         </div>
-
 
                                                         <div className="form-group my-3">
                                                             <div className="col-sm-offset-3 col-sm-9">

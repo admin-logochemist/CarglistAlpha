@@ -87,6 +87,7 @@ export default function account_fianance() {
     }
 
     return (
+        
         <div className={styles.body}>
             <Header />
             <div id="setHeaderBottomGap"></div>

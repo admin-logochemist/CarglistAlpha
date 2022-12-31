@@ -225,7 +225,22 @@
   color: #2b6777;
   font-size: 20px;
 }
-
+@media only screen and (max-width:1200px) {
+  .Order_panel{
+    display: block !important;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: -10px;
+    border: none;
+    box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 12%);
+    /* width: 180% !important; */
+    display: block;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+  }
+}
 @media only screen and (max-width:600px) {
   .Order_panel{
     display: block !important;
@@ -236,7 +251,7 @@
     margin-left: -10px;
     border: none;
     box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 12%);
-    width: 180% !important;
+    /* width: 180% !important; */
     display: block;
     flex-wrap: wrap;
     overflow-x: scroll;

@@ -23,6 +23,7 @@ import ToggleButton from 'react-bootstrap/ToggleButton';
 import { addToBasket } from '../components/features/BasketSlice';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Footer from '../components/component/Footer';
 function Products() {
 
     const [review, setReview] = useState("");
@@ -42,7 +43,8 @@ function Products() {
     const [checked, setChecked] = useState(false);
     const [radioValue, setRadioValue] = useState('1');
     const [sizeValue, setSizeValue] = useState('1');
-    const [bidopen, setBidopen] = useState('')
+    const [bidopen, setBidopen] = useState('');
+
     const datas = []
     const dispatch = useDispatch();
     const selectResturant = useSelector(selectOpenResturant)
@@ -69,8 +71,6 @@ function Products() {
             alert("Please add Data")
         }
     }, [])
-
-
 
 
 
@@ -186,8 +186,8 @@ function Products() {
             <div id="setHeaderBottomGap"></div>
 
             <HeaderStore />
-            <div className="container" id={styles.Fluid}>
-                <div className="row" id={styles.ReviewsRow}>
+            <div className="container welistedBannerAffilated" id={styles.Fluid}>
+                <div className="row mb-5" id={styles.ReviewsRow}>
                     <div className="col-lg-10" id={styles.ProductsDetails}>
                         <div className={styles.proimg} >
                             <ReactImageMagnify {...{
@@ -289,7 +289,7 @@ function Products() {
 
                     </div>
                 </div>
-                <div className="row" id={styles.ReviewsRow}>
+                <div className="row mt-5" id={styles.ReviewsRow}>
                     <div className={`${'col-lg-10'} ${styles.col10}`}>
 
                         <Card style={{ width: '28rem', marginBottom: '50px' }} className={styles.reviewCard}>
@@ -310,6 +310,7 @@ function Products() {
                                 >Submit Review</Button>
                             </Card.Body>
                         </Card>
+
                         <div className={styles.resReviews}>
                             <h6 className={styles.HeadingProducts}>Total Ratings</h6>
                             <ReactStars
@@ -320,21 +321,20 @@ function Products() {
                             />
 
                         </div>
-
-
                     </div>
-
                     <div className={`${'col-lg-10'} ${styles.userreviews}`}>
                         {renderReviews()}
                     </div>
                 </div>
 
             </div>
-
+            <Footer/>
         </>
-
 
     )
 }
+
+
+
 
 export default Products;

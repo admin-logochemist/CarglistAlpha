@@ -18,7 +18,7 @@ export default function SignIn() {
                             </div>
                             <div id={styles.btn_signin}>
                             <Link href="/Signup"><button id={styles.btn2}>Sign Up</button></Link>
-    {/*<button id={styles.btn3}><Link href="/SignInSeller">Sign As Seller</Link></button> */}
+                            {/*<button id={styles.btn3}><Link href="/SignInSeller">Sign As Seller</Link></button> */}
                             </div>
                         </div>
 

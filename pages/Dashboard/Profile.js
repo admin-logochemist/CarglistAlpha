@@ -22,6 +22,8 @@ import {
   Report,
   Menu
 } from '@material-ui/icons'
+
+
 import stylesMenu from '../../styles/sidebar.module.css'
 import DashboardProductAddForm from '../../components/component/DashboardProductAddForm/DashboardProductAddForm'
 import SellerProfile from '../../components/component/Dashboardproduct/SellerProfile'
@@ -31,6 +33,8 @@ import SellerProfile from '../../components/component/Dashboardproduct/SellerPro
 function Profile() {
 
   const [on, setOn] = useState(true);
+
+  
   return (
     <div>
       <Topbar />
@@ -43,31 +47,35 @@ function Profile() {
 
         {
           on ?
+          <>
+                <Sidebar2 />
             <div className="row" id={styles.container} style={{ display: "flex", flexWrap: "wrap" }}>
 
-              <div className="col-lg-3 col-md-3 col-sm-3" id='hideOnMob' >
-                <Sidebar2 />
+              <div className="col-lg-4 col-md-4 col-sm-4" id='hideOnMob' >
               </div>
-              <div className="col-lg-9 col-md-9 col-sm-9"  >
-                <div className={`${styles.mainhead} mt-5 mb-5 text-center d-flex justify-content-center align-items-center`}>
-                  <h1 className={` py-4 `} id='hideOnMob'>PROFILE</h1>
+              <div className="col-lg-8 col-md-8 col-sm-8"  >
+                <div className={`${styles.mainhead}  mt-5 mb-5  text-center d-flex justify-content-center align-items-center`}>
+                  <h1 className={` py-4 mx-auto `} >PROFILE</h1>
                 </div>
                 <SellerProfile />
               </div>
             </div>
+          </>
             :
+            <>
+                <Sidebar2 />
             <div className="row" id={styles.container} >
               <div className="col-lg-1 col-md-2 col-sm-2">
-                <Sidebar2 />
               </div>
               <div className="col-lg-11 col-md-10 col-sm-10" >
-                <div className={`${styles.mainhead} mt-5 mb-5 text-center d-flex justify-content-center align-items-center`}>
+                <div className={`${styles.mainhead}  ${styles.profileHead} mt-5 mb-5 text-center d-flex justify-content-center align-items-center`}>
                   <h1 className={` py-4`} >PROFILE</h1>
                 </div>
                 <SellerProfile />
 
               </div>
             </div>
+            </>
         }
 
       </div>

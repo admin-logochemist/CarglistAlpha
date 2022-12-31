@@ -1,22 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from '../../styles/post.module.css'
 
-const SideBar = ({ openClass }) => {
-  return (
-      <div>
-  
-    <nav id={openClass === 'open' ? styles.opneSidebar : ''}>
 
+const SideBar = ({ openClass }) => {
+
+
+  
+  
+  return (
+  <div>
+  
+    <nav id={openClass === 'open'? styles.opneSidebar : ''}>
  
-    
       <ul id={styles.navlist}>
       <h3>Job</h3>
+
         <li>
           <a id={styles.menu_item} href="/">
             Home
           </a>
         </li>
-
+ 
         <li>
           <a id={styles.menu_item} href="">
             Account/finance

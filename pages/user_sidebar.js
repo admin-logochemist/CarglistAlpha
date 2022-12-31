@@ -1,6 +1,7 @@
 import React from 'react';
-import sidestyle from '../styles/sidebars.module.css'
-import Link from 'next/link'
+import sidestyle from '../styles/sidebars.module.css';
+import Link from 'next/link';
+
 function user_sidebar() {
   return (
   <>
@@ -22,6 +23,7 @@ function user_sidebar() {
         </nav>
   </>
   );
+  
 }
 
 export default user_sidebar;

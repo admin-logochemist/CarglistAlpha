@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from '../pages/Header';
+import Footer from '../components/component/Footer'
 import styles from '../styles/ListAdd.module.css'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
@@ -19,6 +20,7 @@ import { New } from 'styled-icons/entypo';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 
+
 const ListAdd = () => {
 
     const [condition, setCondition] = useState(false)
@@ -34,6 +36,7 @@ const ListAdd = () => {
             setCondition(false);
         }
     }
+
 
 
     return (
@@ -114,7 +117,7 @@ const ListAdd = () => {
                     </div>
                 </div>
             </div>
-
+            <Footer/>
         </>
     )
 }

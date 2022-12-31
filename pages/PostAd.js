@@ -12,7 +12,9 @@ import { faHeader } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { selectOpenResturant } from '../components/features/ResSlice';
 import Header from './Header';
+
 export default function postadd() {
+
   const selectJob = useSelector(selectOpenResturant);
 
   return (
@@ -27,7 +29,6 @@ export default function postadd() {
             <div className="col-6" style={{height:'80vh'}}>
               <div className={styles.jobpost_wrapper}>
                 <div className={styles.jobpost_job_postings}>
-                  {/* <a href="#" className={styles.jobpost_link}></a> */}
                   <div className={styles.jobpost_image}>
                     <h3>{selectJob?.data().posttitle}</h3>
                     <div className={styles._overlay}>

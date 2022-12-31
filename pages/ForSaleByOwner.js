@@ -43,6 +43,7 @@ const ForSaleByOwner = () => {
         setSelectData(item)
 
     }
+    
     const handleSelectedData = () => {
       
         if(selectData === "antiques"){

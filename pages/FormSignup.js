@@ -92,7 +92,7 @@ function FormSignup() {
       }
 
 
-      if (select === 'Seller') {
+      if(select === 'Seller') {
         // const stripe = await stripePromise;
 
         const RegisterSession =

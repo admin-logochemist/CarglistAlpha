@@ -35,7 +35,8 @@ function SubProductList() {
     const items = useSelector(selectItems);
     const [product, setProduct] = useState([]);
     const [category, setCategory] = useState([]);
-    const { categorys } = router.query
+    const { categorys } = router.query;
+
 
     const getProductList = () => {
 
@@ -259,8 +260,7 @@ function SubProductList() {
             <div id="setHeaderBottomGap"></div>
 
             <div className="container-fluid">
-                <div className="row" id={styles.collist}>
-                    <div className='col-lg-1'></div>
+                <div className="row" id={styles.collllist}>
                     <div className="col-lg-11" >
                         <ul className={styles.storeheadul}>
                             <li>SAVE MORE ON APP</li>
@@ -278,7 +278,7 @@ function SubProductList() {
             <div className='container-fluid' id={styles.Mallcatlist}>
                 <h5>CATEGORY</h5>
                 <div className={`${'row'} ${styles.productlistrow}`} >
-                    <div className={`${"col-lg-3 col-md-3 col-sm-3"} ${styles.colleft}`}>
+                    <div className={`${"col-3"} ${styles.colleft}`}>
                         <div className={styles.ListCheckBox}>
                             <h6>Brand</h6>
                             <FormGroup>
@@ -304,7 +304,7 @@ function SubProductList() {
 
 
                     </div>
-                    <div className='col-lg-9'>
+                    <div className='col-9'>
                         {renderProductSale()}
                     </div>
                 </div>
@@ -324,4 +324,3 @@ function SubProductList() {
 
 
 export default SubProductList;
-

@@ -33,6 +33,7 @@ export default function Create_post() {
         setSelectData(item)
 
     }
+    
     const handleSelectedData = () => {
         // if(item==='gigOffered'){
         //     router.push({pathname: "/resume_Form", query: { category: selectData }})
@@ -85,10 +86,12 @@ export default function Create_post() {
 
     }
 
+
     useEffect(() => {
         getData();
-
     }, [])
+
+    
     return (
         <div>
             <Header />
@@ -103,8 +106,6 @@ export default function Create_post() {
                         {radioData[0] ? radioData[0].map((item, index) => {
 
                             return (
-
-
 
                                 <li key={index}>
                                     <label>

@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   padding: 25px;
+  margin: 0px auto !important;
 }
 
 .card {
@@ -23,10 +24,11 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 200px;
   height: 110px;
   border: 1px solid lightgray;
   border-radius: 5px !important;
+  margin: 0px auto;
 }
 
 .card img {
@@ -78,10 +80,11 @@
   align-items: center;
   justify-content: space-evenly !important;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 400px;
   height: 110px;
   border: 1px solid lightgray;
   border-radius: 5px !important;
+  margin: 0px auto !important;
 }
 
 .ContactCard img {
@@ -105,9 +108,16 @@
 }
 @media only screen and (max-width:500px) {
 
-
 .roow2 {
   width: 245vw !important; 
+  /* margin-left: 100px; */
+}
+
+}
+@media only screen and (max-width:360px) {
+
+.roow2 {
+  width: 145vw !important; 
 }
 
 }

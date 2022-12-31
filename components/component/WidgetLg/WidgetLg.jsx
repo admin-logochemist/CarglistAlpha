@@ -69,7 +69,7 @@ useEffect(() => {
       <div id={styles.Maincontainer11} >
         <div className="container">
           <div className="row">
-            <div className="col=lg-12" id={styles.OrderDetails}>
+            <div className="col-lg-12" id={styles.OrderDetails}>
               <div className="row">
   
                 <div className="col-md-12">
@@ -83,6 +83,8 @@ useEffect(() => {
 
                     </div>
                     <div className={`${styles.order_panel_body}`}>
+                  
+                   
                       <table className={`${styles.order_table}`}>
                         <thead>
                           <tr className={styles.tr}>
@@ -109,8 +111,8 @@ useEffect(() => {
                                 <div key={index}>
                                   <p>{item.split(',')[2].substring(0, 1)}</p>
                                 </div>
-                              ))}
-                              </td>
+                                ))}
+                                </td>
                               <td>{new Date(item.timestamp.seconds * 1000).toLocaleString()}</td>
                               <td>${item.amount}</td>
                               <td>
@@ -130,7 +132,7 @@ useEffect(() => {
                             </tr>
                           ))}
                         </tbody>
-                      </table>
+                      </table> 
                     </div>
 
                     <div className={`${styles.panel_footer}`}>

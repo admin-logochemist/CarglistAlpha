@@ -25,7 +25,7 @@ function SubcatAdd() {
     const [categoryIdForSub, setCategoryIdForSub] = useState("");
     const [categoryForSub, setCategoryForSub] = useState("");
     const router = useRouter()
-
+    // console.log(categoryForSub, 'helsdfsdf')
 
     var data = [];
 
@@ -65,6 +65,7 @@ function SubcatAdd() {
             //          image:downloadUrl
             //      })
             //  }
+
             await uploadString(ImageRef, file, 'data_url').then(
                 async (snapshot) => {
                     const downloadUrl = await getDownloadURL(ImageRef);
@@ -134,11 +135,11 @@ const getProduct = async () => {
 
                     {
                         on ?
-                            <div  >
+                        <div  >
 
                                 <div className="col-lg-3 col-md-3 col-sm-3" >
+                                <Sidebar2 />
                                     {/* <Sidebar /> */}
-                                    <Sidebar2 />
                                 </div>
                                 <div className="col-lg-9 col-md-9 col-sm-9 " style={{ marginLeft: '10%', paddingTop: '5%' }} >
                                     <div className={`${styles.mainhead} my-5 text-center d-flex justify-content-center align-items-center`} style={{ marginLeft: '12% !important' }}>
@@ -166,7 +167,7 @@ const getProduct = async () => {
                                                            
                                                             <label className="col-sm-3 control-label">Category</label>
 
-                                                            <select className="form-select selectCatforSubCat" aria-label="Default select example">
+                                                            <select className="form-select selectCatforSubCat" aria-label="Default select example" onChange={(e)=>setCategoryForSub(e.target.value)}>
                                                             {ProductData.length &&
                                                                 ProductData.map((item, index) => {
                                                                 return (

@@ -20,7 +20,6 @@ export default function SignInSeller() {
                                 <button id={styles.btn2}><Link href="/Signup">Sign Up</Link></button>
                             </div>
                         </div>
-
                         <div>
                             <FormSeller />
                         </div>

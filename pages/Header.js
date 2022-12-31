@@ -34,16 +34,16 @@ export default function Header() {
         }
     }
 
-
-
+    // col-lg-2 col-md-2 col-sm-2 col-xm-3 col-3 
+    // col-lg-10 col-md-10 col-sm-9 col-xm-9 col-9
     return (
 
         <div className='container-fluid' id={styles.header}>
             <div className='row' id={styles.row_header}>
-                <div className='col-lg-2 col-md-2 col-sm-2 col-xm-3'  id={styles.head_name}>
+                <div className='col-3 bg-success'  id={styles.head_name}>
                     <a href="/" className={styles.imgcontainer}><img src="/weblisted-01.png" className={`${styles.headerlogoImage}`} alt=""  /></a>    
                 </div>
-                <div className='col-lg-10 col-md-10 col-sm-9 col-xm-9' >
+                <div className='col-9 bg-warning ll' >
                     <div id={styles.header_rightside}>
                         <span className={styles.logoutbutton}>
                             {((usersName !== null) && (usersName !== "")) ?
@@ -56,6 +56,7 @@ export default function Header() {
                                 <a href="/SignIn" className={`${styles.a_1} text-light`}>
                                     Login </a>}
                         </span>
+                     
                         <span className='text-light' id={styles.header_rightside_text}><a href="Dashboard/SellerDashboard">| &nbsp; Account</a></span>
                     </div>
                 </div>

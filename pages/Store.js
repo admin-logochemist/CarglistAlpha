@@ -110,8 +110,9 @@ function Store() {
 
     return (
         <>
+          
             <Header />
-                    <div id="setHeaderBottomGap"></div>
+            <div id="setHeaderBottomGap"></div>
             <div className={styles.body}>
 
                 <div className={styles.header00}>
@@ -200,7 +201,8 @@ function Store() {
                     </div>
                 </div>
 
-                {/* <div className="container">
+{    
+ /* <div className="container">
                 <div className="row" id={styles.rowmart}>
                     <div className="col-lg-3 col-md-4 col-sm-4" id={styles.banner}>
                         <button className={styles.btns} >
@@ -226,8 +228,8 @@ function Store() {
                     </div>
                 </div>
             </div> 
-    */}
-
+    */
+    }
 
                 <div className='container-fluid'>
                     <div className="row">
@@ -240,6 +242,8 @@ function Store() {
                 <div className="container-fluid">
                     <div className={`${"row"}`}>
                         <div className={`${"col-lg-12 col-md-12 col-sm-12 xs-hidden"} ${styles.topse}`}>
+                       
+
                             <div className={`${styles.content} mx-1`}>
                                 <a href=""> <img src="rice-bowl.png" alt="" /> Mart</a> <ArrowForwardIcon className={styles.topsecicon} />
                             </div>
@@ -261,11 +265,12 @@ function Store() {
                             <div className={`${styles.content} mx-1`}>
                                 <a href="/SubcatAdd"><img src="cosmetics.png" alt="" /> Add Subcategory</a> <ArrowForwardIcon className={styles.topsecicon} />
                             </div>
+                      
+
                         </div>
 
                     </div>
                 </div>
-
 
                 <div className={`${'container-fluid pt-5'}`} >
                     <div className={`${"row pb-5 my-3"} d-flex justify-content-center`}>
@@ -283,8 +288,6 @@ function Store() {
                 </div>
 
 
-
-
                 <div className={`${'container-fluid pt-5'}`} >
                     <div className={`${"row pb-5 my-3"} d-flex justify-content-center`}>
                         <div className='col-lg-12 mb-5 d-flex justify-content-center'>
@@ -298,13 +301,12 @@ function Store() {
                         </Stack>
                     </div>
                 </div>
-
-
-
             </div>
             <Footer />
         </>
     )
 }
+
+
 
 export default Store;

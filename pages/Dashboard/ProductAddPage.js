@@ -30,21 +30,26 @@ import Sidebar2 from '../../components/component/Siderbar/Sidebar2'
 
 function ProductAddPage() {
   const [on, setOn] = useState(true);
+
+
+
   return (
     <div>
       <Topbar />
 
       <div className="container-fluid" >
         <div className="row" id={styles.container} >
-          {/* <div id={stylesMenu.MenuBARIcon} style={{ width: on == true ? '274px' : '90px' }}>
-            <Menu className={stylesMenu.sidebarMenuIcon} onClick={() => setOn(!on)} />
-          </div> */}
+          {
+          // <div id={stylesMenu.MenuBARIcon} style={{ width: on == true ? '274px' : '90px' }}>
+          //   <Menu className={stylesMenu.sidebarMenuIcon} onClick={() => setOn(!on)} />
+          // </div>
+          }
         </div>
 
         {
           on ?
           <>
-                <Sidebar2 />
+            <Sidebar2 />
             <div id={styles.container} >
 
               <div className="col-lg-3 col-md-3 col-sm-3" >
@@ -62,19 +67,16 @@ function ProductAddPage() {
             </>
             :
             <>
-                <Sidebar2 />
             <div id={styles.container} >
               <div className="col-lg-1 col-md-2 col-sm-2 no-gutters">
+                <Sidebar2 />
                 {/* <SideBarTwo /> */}
-
               </div>
-
               <div className="col-lg-11 col-md-10 col-sm-10" >
                 <div className={`${styles.mainhead} my-5 text-center d-flex justify-content-center align-items-center`} style={{ marginLeft: '8%' }}>
                   <h1 className={` py-4`} >ADD PRODUCTS</h1>
                 </div>
-                <DashboardProductAddForm />
-
+                <Dashb oardProductAddForm />
               </div>
             </div>
             </>
@@ -84,4 +86,5 @@ function ProductAddPage() {
   )
 }
 
-export default ProductAddPage
+
+export default ProductAddPage;

@@ -5,6 +5,7 @@ import Header from "../pages/Header"
 import Footer from '../components/component/Footer'
 
 export default function scams() {
+    
     return (
         <>
             <Header />

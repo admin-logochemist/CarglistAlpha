@@ -5,11 +5,14 @@ import Header from './Header';
 import Footer from '../components/component/Footer';
 
 export default function privacy() {
+
+
+  
   return (
+    
     <>
       <Header />
       <div id="setHeaderBottomGap"></div>
-
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

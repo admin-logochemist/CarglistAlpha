@@ -43,7 +43,6 @@ function post() {
 
 
 
-
     // "subcategory", "==", openCat), 
     // , where("city", "==", city))
     console.log(job)
@@ -89,11 +88,13 @@ function post() {
             <div id={styles.body}>
                 <Header />
             <div id="setHeaderBottomGap"></div>
-
                 <div id={styles.app}>
                     <aside id={on ? styles.to_right : ''}>
+                        <div className = {styles.doubleArrow} >
+
                         {on ? <FontAwesomeIcon icon={faAnglesLeft} id={styles.icon} onClick={handleOn} /> :
                             <FontAwesomeIcon icon={faAnglesRight} id={styles.icon} onClick={handleOn} />}
+                        </div>
                         <div className='col-md-10 col-sm-10' id={styles.cityName}>
                             <h1>{city}</h1>
                             <div className={`${"form-group my-5"} ${styles.right_side_post}`}>
@@ -117,5 +118,7 @@ function post() {
         </>
     )
 }
+
+
 
 export default post;

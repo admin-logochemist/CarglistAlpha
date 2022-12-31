@@ -41,6 +41,7 @@ function HeaderStore() {
         }
     }
 
+    
     return (
         <div className="container-fluid headerStoreContainer">
             <div className="row">

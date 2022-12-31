@@ -138,9 +138,7 @@ export default function account_fianance() {
                                                 </b>
                                             </p>
                                         </div>
-
                                         <div className="col-md-5" id={styles.postselect}>
-
                                         </div>
                                     </div>
                                     <textarea name="" id="" cols="30" rows="10" value={discription} placeholder="discription" onChange={(e) => setDiscription(e.target.value)} ></textarea>
@@ -297,9 +295,6 @@ export default function account_fianance() {
             <section className={styles.formbuttonsection}>
                 <button onClick={handleSubmit} >Form   Submit</button>
             </section>
-
-
-
 
         </div>
     )

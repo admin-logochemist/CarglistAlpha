@@ -47,7 +47,7 @@
   height: 100vh;
   width: 240px;
   position: fixed;
-  top: 75px;
+  top: 57px;
   left: 0;
   overflow-x: hidden;
   padding-top: 60px;
@@ -121,10 +121,14 @@
   border: none !important;
   outline: none !important;
 }
+.doubleArrow{
 
+  display: flex;
+  justify-content: end;
+}
 #icon_input {
   width: 10px;
-  float: right;
+  
 }
 
 .right_side_post {
@@ -220,7 +224,8 @@
 
 @media screen and (max-width: 600px) {
   #icon{
-    display: none;
+    /* display: none; */
+    display: block;
   }
 }
 #icon {
@@ -301,10 +306,10 @@
 }
 
 #cityName {
-  border-bottom: 1px solid darkgrey;
+  /* border-bottom: 1px solid darkgrey; */
   padding: 15px;
   display: flex;
-  border-bottom: 1px solid darkgrey;
+  /* border-bottom: 1px solid darkgrey; */
   padding: 15px;
   justify-content: space-evenly;
 }
@@ -367,8 +372,8 @@
     cursor: pointer;
   }
 
-  .opneSidebar {
-    width: 100px;
+  #opneSidebar {
+    width: 400px !important;
   }
 
   #cityName {
@@ -377,14 +382,16 @@
 
   .right_side_post {
     width: 100%;
-    
+  }
+  #text{
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #navlist {
+  /* #navlist {
     visibility: collapse;
-  }
+  } */
 
   #to_right {
     margin-left: 0;

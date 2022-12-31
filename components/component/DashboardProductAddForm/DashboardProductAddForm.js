@@ -212,12 +212,13 @@ export default function Tags() {
     console.log(subCatData, "my Sub cat data");
 
   }
+  
   useEffect(() => {
     getProduct()
     getSubProduct()
   }, [])
 
-
+  
   return (
     <>
       <div className='d-grid place-items-center place-content-center' id='form-responsive' style={{ paddingTop: 10 }}>
@@ -254,14 +255,13 @@ export default function Tags() {
               label="SubCategory"
               onChange={handleSubCapacity}
             >
-              {subCatData.length &&
-
-                 subCatData.filter((item)=> item.category === category).map((item, index)=>{
+              {
+              subCatData.length &&
+                 subCatData.filter((item)=> item.category === category).map((item, index) => {
                   return (
                     <MenuItem key={index} value={item?.subcategory}>{item?.subcategory}</MenuItem>
                   );
-                 })
-
+                })
                 }
             </Select>
           </FormControl>

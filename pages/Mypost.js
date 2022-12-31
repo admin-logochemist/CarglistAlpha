@@ -15,6 +15,9 @@ import DCss from '../styles/dashboard.module.css'
 import { db } from '../firebase'
 import { useRouter } from 'next/router';
 import { Category } from 'styled-icons/boxicons-regular';
+
+
+
 function Mypost() {
     const router = useRouter()
     const { openCat } = router.query;
@@ -95,7 +98,6 @@ function Mypost() {
                                     <h4 className={`${DCss.panel_title}`}>Post Details</h4>
                                 </div>
                             </div>
-
                         </div>
                         <div className={`${DCss.order_panel_body}`}>
                             <table className={`${DCss.order_table}`}>

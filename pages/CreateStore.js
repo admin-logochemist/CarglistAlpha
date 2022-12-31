@@ -166,14 +166,6 @@ const CreateStore = () => {
 
 
 
-
-
-
-
-
-
-
-
     return (
         <>
             <section className='sectionStoreForm'>

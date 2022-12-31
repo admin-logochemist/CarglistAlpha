@@ -153,3 +153,14 @@
   box-shadow: #2b6777 0 3px 7px inset;
   transform: translateY(2px);
 }
+@media screen and (max-width: 500px) {
+  .maincontainer{
+    height: 110vh !important;
+  }
+  .maincontainer {
+    background-color: white !important;
+    padding: 15px;
+    height: 1000px !important;
+  }
+  
+}
